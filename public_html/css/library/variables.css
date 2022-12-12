@@ -1,0 +1,30 @@
+/* Flex */
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-vr-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-hr-center {
+    display: flex;
+    justify-content: center;
+}
+
+/* Root */
+
+:root {
+    font-family: 'Vollkorn', serif;
+    font-size: 62.5%;
+
+    --var-primary-color: #2F3A4A;
+    --var-secondary-color: #fff;
+
+    background-color: var(--var-primary-color);
+    color: var(--var-secondary-color);
+}

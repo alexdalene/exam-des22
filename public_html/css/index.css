@@ -1,0 +1,51 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 0px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1.5rem;
+    grid-area: 2 / 2 / 2 / 4;
+    z-index: 2;
+}
+
+.hero-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1.5rem;
+    grid-area: 2 / 4 / 2 / 6;
+    opacity: 60%;
+    z-index: 2;
+}
+
+.hero-left-header {
+    font-size: 3.6rem;
+    font-family: 'Market Deco', sans-serif;
+    max-width: 385px;
+}
+
+.hero-right-header {
+    font-size: 3.6rem;
+    font-family: 'Market Deco', sans-serif;
+    line-height: 1;
+    visibility: hidden;
+    max-width: 385px;
+}
+
+#planet-one {
+    z-index: 1;
+    transform: scale(1.8);
+    grid-area: 1 / 1 / 3 / 4;
+}
+
+.museum-logo {
+    transform: scale(2);
+    grid-area: 3 / 3 / 6 / 5;
+}
