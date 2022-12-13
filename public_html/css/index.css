@@ -1,28 +1,33 @@
 .container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 2rem;
-    grid-row-gap: 0px;
+    grid-row-gap: 2rem;
+    overflow: hidden;
 }
+
+/* Hero */
 
 .hero-left {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
-    gap: 1.5rem;
-    grid-area: 2 / 2 / 2 / 4;
+    gap: 2rem;
+    grid-area: 1 / 2 / 1 / 4;
     z-index: 2;
+    place-self: end;
 }
 
 .hero-right {
     display: flex;
     flex-direction: column;
     font-size: 2rem;
-    gap: 1.5rem;
-    grid-area: 2 / 4 / 2 / 6;
+    gap: 2rem;
+    grid-area: 1 / 4 / 1 / 6;
     opacity: 60%;
     z-index: 2;
+    place-self: end;
 }
 
 .hero-left-header {
@@ -39,13 +44,228 @@
     max-width: 385px;
 }
 
-#planet-one {
+/* Green Planet */
+
+.planet-one {
     z-index: 1;
-    transform: scale(1.8);
-    grid-area: 1 / 1 / 3 / 4;
+    transform: scale(3);
+    grid-area: 1 / 1 / 2 / 3;
+    position: relative;
 }
+
+.planet-two {
+    z-index: 1;
+    transform: scale(3);
+    grid-area: 3 / 5 / 3 / 5;
+    position: relative;
+}
+
+.planet-three {
+    z-index: 1;
+    transform: scale(6);
+    grid-area: 5 / 1 / 5 / 2;
+    position: relative;
+}
+
+/* Logo */
 
 .museum-logo {
     transform: scale(2);
-    grid-area: 3 / 3 / 6 / 5;
+    grid-area: 2 / 3 / 3 / 5;
+    place-self: start;
+    z-index: 2;
+}
+
+/* Info Article */
+
+.info-article {
+    grid-area: 3 / 2 / 3 / 4;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 0.9rem;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.article-header {
+    margin-right: 1rem;
+    font-size: 2.4rem;
+    font-family: 'Market Deco', sans-serif;
+}
+
+.hr-top, .hr-bot {
+    width: 100%;
+    border: none;
+    border-top: 1px solid white;
+}
+
+.article-sub-header {
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.article-sub-header i {
+    margin-right: 0.5rem;
+}
+
+/* Exhibitions Article */
+
+.exhibitions-article {
+    grid-area: 3 / 4 / 3 / 6;
+    background-color: black;
+    background-image: url(../images/exhibitions-article-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+    z-index: 2;
+}
+
+.exhibitions-article h2 {
+    font-size: 5.6rem;
+    font-family: 'Chiffone', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--var-border-radius);
+    text-align: center;
+}
+
+/* Events Article */
+
+.events-article {
+    grid-area: 4 / 2 / 4 / 4;
+    background-color: black;
+    background-image: url(../images/events-article-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+    z-index: 2;
+}
+
+.events-article h2 {
+    font-size: 5.6rem;
+    font-family: 'Chiffone', sans-serif;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: var(--var-border-radius);
+    text-align: center;
+}
+
+/* Social Article */
+
+.social-article {
+    grid-area: 4 / 4 / 4 / 6;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 0.9rem;
+    z-index: 2;
+    justify-content: space-between;
+}
+
+.article-social-link {
+    font-family: 'Market Deco', sans-serif;
+}
+
+.article-social-link i {
+    margin-right: 0.5rem;
+}
+
+.social-article-signup {
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.email-input {
+    height: 3rem;
+    width: 25rem;
+    border-radius: var(--var-border-radius);
+    border: none;
+    margin-right: 1rem;
+}
+
+.btn-submit {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+    height: 3.2rem;
+    width: 10rem;
+    border-radius: var(--var-border-radius);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+/* Explore */
+
+.explore-article {
+    grid-area: 5 / 2 / 7 / 4;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 0.9rem;
+    place-self: center;
+    height: 55rem;
+    z-index: 2;
+}
+
+.japanese {
+    opacity: 60%;
+}
+
+.explore-article-img {
+    background-image: url(../images/explore-article-img.jpg);
+    background-size: cover;
+    background-position: center;
+    grid-area: 5 / 4 / 7 / 6;
+    z-index: 2;
+    place-self: center;
+    max-height: 55rem;
+    border-radius: var(--var-border-radius);
+    z-index: 2;
+}
+
+/* Footer */
+
+.footer-container {
+    width: 100%;
+    height: 50rem;
+    background-color: #0E0E0E;
+    grid-area: 8 / 1 / 8 / 8;
+    z-index: 2;
+    place-self: end;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+
+.footer-info {
+    grid-area: 2 / 2 / 4 / 2;
+    flex-direction: column;
+    font-size: 1.4rem;
+    justify-content: space-between;
+}
+
+.footer-museum-logo {
+    grid-area: 2 / 1 / 4 / 1;
+    place-self: center;
+    scale: 1.5;
+}
+
+.footer-social {
+    grid-area: 3 / 3 / 3 / 3;
+    font-size: 2rem;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.footer-contact {
+    grid-area: 2 / 3 / 2 / 3;
+    font-size: 1.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contact-link {
+    text-decoration: underline;
+    margin-top: 0.3rem;
 }

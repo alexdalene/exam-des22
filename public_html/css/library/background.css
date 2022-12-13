@@ -1,9 +1,11 @@
 .background {
     background-image: url(../../resources/textures/grit.png);
-    background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 
 .background-gradient {
@@ -11,4 +13,5 @@
     height: 100%;
     background: rgb(0,0,0);
     background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
+    background-attachment: fixed;
 }
