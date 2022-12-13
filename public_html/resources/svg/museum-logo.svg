@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 2000 2000" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <rect id="Artboard2" x="0" y="0" width="2000" height="2000" style="fill:none;"/>
+    <g id="Artboard21" serif:id="Artboard2">
+        <g id="Layer1">
+            <g transform="matrix(1.12465,0,0,1.14416,-153.771,-122.682)">
+                <text x="756.849px" y="935.081px" style="font-family:'ChiffonePersonalUse';font-size:150px;fill:white;">S<tspan x="842.361px 921.144px 966.76px 1047.03px 1130.81px 1209.6px " y="935.081px 935.081px 935.081px 935.081px 935.081px 935.081px ">CIENCE</tspan></text>
+            </g>
+            <g transform="matrix(1.25799,0,0,1.2,-257.314,-12.6413)">
+                <text x="756.849px" y="935.081px" style="font-family:'MarketDeco', 'Market Deco';font-size:150px;fill:white;">MUSEUM</text>
+            </g>
+            <g transform="matrix(0.993948,0,0,1,-56.7263,14.5101)">
+                <rect x="767.22" y="1094.12" width="20.78" height="43.879" style="fill:white;"/>
+            </g>
+            <g transform="matrix(6.08617e-17,0.993948,-13.4074,8.20964e-16,15963.4,369.279)">
+                <rect x="767.22" y="1094.12" width="20.78" height="43.879" style="fill:white;"/>
+            </g>
+        </g>
+    </g>
+</svg>
