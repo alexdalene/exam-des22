@@ -338,7 +338,7 @@
 
 @media screen and (max-width: 1090px) {
     .container {
-        grid-template-rows: repeat(10, 50rem);
+        grid-template-rows: repeat(11, 50rem);
         grid-gap: 2rem;
     }
 
@@ -369,19 +369,19 @@
     }
 
     .events-article {
-        grid-row: 6;
-    }
-
-    .social-article {
         grid-row: 7;
     }
 
+    .social-article {
+        grid-row: 6;
+    }
+
     .explore-article {
-        grid-row: 8;
+        grid-row: 9;
     }
 
     .explore-article-img {
-        grid-row: 9;
+        grid-row: 10;
     }
 
     .footer-container {
@@ -399,5 +399,18 @@
 
     .planet-container-3 {
         left: -30rem;
+        top: 350rem;
+    }
+
+    .spaceship-container-1 {
+        display: none;
+    }
+
+    .spaceship-container-2 {
+        display: none;
+    }
+
+    .navbar {
+        visibility: hidden;
     }
 }
