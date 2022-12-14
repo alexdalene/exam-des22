@@ -35,5 +35,5 @@
     background-color: var(--var-primary-color);
     color: var(--var-secondary-color);
 
-    --var-border-radius: 5rem;
+    --var-border-radius: 0.5rem;
 }

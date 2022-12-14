@@ -1,14 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;500;700&display=swap');
+
 @font-face {
     font-family: "Chiffone";
-    src: url(../../resources/fonts/ChiffonePersonalUse.ttf);
+    src: local("Chiffone"),
+    url("../../resources/fonts/ChiffonePersonalUse.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Market Deco";
-    src: url(../../resources/fonts/Market_Deco.ttf);
-}
-
-@font-face {
-    font-family: "Vollkorn";
-    src: url(../../resources/fonts/Vollkorn-VariableFont_wght.ttf);
+    src: local("Market Deco"),
+    url("../../resources/fonts/Market_Deco.ttf") format("truetype");
 }

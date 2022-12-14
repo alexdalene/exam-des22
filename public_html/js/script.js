@@ -1,12 +1,3 @@
-// const planet = document.getElementById("planet-one");
-
-// window.addEventListener("mousemove", function(event) {
-//   const x = event.pageX;
-//   const y = event.pageY;
-
-//   planet.style.transform = `translate(${x/100}px, ${y/100}px)`;
-// });
-
 const planetOne = document.getElementById("planet-one");
 
 window.addEventListener("scroll", function() {
