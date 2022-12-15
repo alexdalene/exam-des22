@@ -1,9 +1,11 @@
+/* Navbar Desktop */
+
 .navbar {
     width: 100%;
     justify-content: space-between;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-family: "Market Deco";
-    padding: 20px;
+    padding: 2rem;
     box-sizing: border-box;
     z-index: 100;
     position: fixed;
@@ -12,13 +14,59 @@
 .navbar a {
     text-decoration: none;
     color: white;
-    transition: 140ms ease;
+    transition: 150ms ease;
+    transition-delay: 100ms;
 }
 
 .navbar a:hover {
-    border-bottom: 4px solid white;
+    font-size: 1.8rem;
+    color: #c4c4c4;
 }
 
 .navbar-right {
     gap: 6rem;
+}
+
+/* Navbar Mobile */
+
+.navbar-mobile {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1.6rem;
+    font-family: "Market Deco";
+    box-sizing: border-box;
+    z-index: 100;
+    position: fixed;
+    font-size: 2rem;
+    padding-left: 1rem;
+    padding-top: 4rem;
+    display: none;
+}
+
+.navbar-menu-open {
+    list-style: none;
+    cursor: pointer;
+    font-size: 4rem;
+}
+
+.navbar-menu-content {
+    gap: 4rem;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.navbar-menu-content a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1090px){
+    .navbar {
+        display: none;
+    }
+
+    .navbar-mobile {
+        display: inline;
+    }
 }
