@@ -1,9 +1,21 @@
 .container {
     display: grid;
-    /* grid-template-columns: 2fr 1fr 1fr 1fr 1fr 2fr; */
     grid-template-columns: repeat(auto-fit, minmax(24rem, 25rem));
     grid-template-rows: repeat(7, 50rem);
     grid-gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    margin: 0 2rem;
+}
+
+.container-explore {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 25rem));
+    grid-template-rows: repeat(8, 50rem);
+    grid-row-gap: 10rem;
+    grid-column-gap: 2rem;
     overflow: hidden;
     align-items: center;
     justify-content: center;
@@ -282,6 +294,104 @@
     z-index: 2;
 }
 
+/* Explore Page */
+
+/* Cosmology Article */
+
+.article-content {
+    flex-direction: column;
+    width: 60%;
+    gap: 2rem;
+}
+
+.article-header-big {
+    font-family: "Chiffone", sans-serif;
+    font-size: 6rem;
+}
+
+.article-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0.2rem);
+    border-radius: var(--var-border-radius);
+    -webkit-backdrop-filter: blur(0.2rem);
+}
+
+.article-cosmology {
+    grid-column: span 3;
+    grid-row: 3;
+    box-sizing: border-box;
+    font-size: 2rem;
+    gap: 0.9rem;
+    display: flex;
+    background-image: url(../images/article-cosmology-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+}
+
+/* Evolution Article */
+
+.article-evolution {
+    grid-column: 2 / 5;
+    grid-row: 4;
+    box-sizing: border-box;
+    font-size: 2rem;
+    gap: 0.9rem;
+    display: flex;
+    background-image: url(../images/article-evolution-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+}
+
+/* Biology Article */
+
+.article-biology {
+    grid-column: span 3;
+    grid-row: 5;
+    box-sizing: border-box;
+    font-size: 2rem;
+    gap: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/article-biology-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+}
+
+/* Robotics Article */
+
+.article-robotics {
+    grid-column: 2 / 5;
+    grid-row: 6;
+    box-sizing: border-box;
+    font-size: 2rem;
+    gap: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/article-robotics-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+}
+
+/* Ecology Article */
+
+.article-ecology {
+    grid-column: span 3;
+    grid-row: 7;
+    box-sizing: border-box;
+    font-size: 2rem;
+    gap: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/article-ecology-img.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--var-border-radius);
+}
+
 /* Footer */
 
 .footer {
@@ -411,5 +521,25 @@
 
     .navbar {
         visibility: hidden;
+    }
+
+    .container-explore {
+        grid-template-rows: repeat(8, 70rem);
+    }
+    
+    .article-cosmology {
+        grid-column: span 2;
+    }
+    .article-evolution {
+        grid-column: span 2;
+    }
+    .article-biology {
+        grid-column: span 2;
+    }
+    .article-robotics {
+        grid-column: span 2;
+    }
+    .article-ecology {
+        grid-column: span 2;
     }
 }
