@@ -1,3 +1,5 @@
+/* Background */
+
 .background {
     background-image: url(../../resources/textures/grit.png);
     background-size: cover;
@@ -15,6 +17,8 @@
     background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%);
     background-attachment: fixed;
 }
+
+/* Spaceships */
 
 .spaceship-container-1 {
     position: fixed;

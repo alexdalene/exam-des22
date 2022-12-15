@@ -37,10 +37,11 @@
     box-sizing: border-box;
     z-index: 100;
     position: fixed;
-    font-size: 2rem;
-    padding-left: 1rem;
-    padding-top: 4rem;
     display: none;
+}
+
+.navbar-menu {
+    margin: 1rem;
 }
 
 .navbar-menu-open {
@@ -49,17 +50,24 @@
     font-size: 4rem;
 }
 
+.navbar-menu-open::-webkit-details-marker {
+    display: none;
+}
+
 .navbar-menu-content {
     gap: 4rem;
     justify-content: space-evenly;
     width: 60%;
-    margin: 0 auto;
+    margin: 1rem auto;
+    font-size: 2rem;
 }
 
 .navbar-menu-content a {
     text-decoration: none;
     color: white;
 }
+
+/* Query */
 
 @media screen and (max-width: 1090px){
     .navbar {
