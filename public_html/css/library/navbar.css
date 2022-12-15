@@ -41,30 +41,39 @@
 }
 
 .navbar-menu {
-    margin: 1rem;
+
 }
 
 .navbar-menu-open {
     list-style: none;
     cursor: pointer;
     font-size: 4rem;
+    padding: 1rem;
 }
 
+/* Hides marker on Safari */
 .navbar-menu-open::-webkit-details-marker {
     display: none;
 }
 
 .navbar-menu-content {
     gap: 4rem;
-    justify-content: space-evenly;
-    width: 60%;
-    margin: 1rem auto;
-    font-size: 2rem;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 3rem;
+    height: 100vh;
 }
 
 .navbar-menu-content a {
     text-decoration: none;
     color: white;
+}
+
+.navbar-menu[open] {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0.8rem);
+    -webkit-backdrop-filter: blur(0.8rem);
+    transition: 300ms ease;
 }
 
 /* Query */
