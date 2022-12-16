@@ -32,7 +32,18 @@
     justify-content: center;
     scroll-behavior: smooth;
     margin: 0 2rem;
-    height: 100vh;
+}
+
+.container-visit {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 25rem));
+    grid-template-rows: 25rem 10rem 20rem 25rem 12rem 10rem 14rem 25rem;
+    grid-gap: 2rem;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    margin: 0 2rem;
 }
 
 /* Hero */
@@ -306,7 +317,7 @@
     z-index: 2;
 }
 
-/* Explore Page */
+/* !!!! Explore Page */
 
 /* Cosmology Article */
 
@@ -410,6 +421,8 @@
     z-index: 2;
 }
 
+/* !!! Events Page */
+
 .event-section {
     grid-column: span 2;
     grid-row: 2;
@@ -491,6 +504,8 @@
     z-index: 2;
 }
 
+/* Headers */
+
 .event-left-header {
     font-size: 3.6rem;
     font-family: 'Market Deco', sans-serif;
@@ -503,6 +518,140 @@
     line-height: 1;
     visibility: hidden;
     max-width: 385px;
+}
+
+/* !!! Visit Page */
+
+/* Location */
+
+.section-location {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2rem;
+    grid-column: span 2;
+    grid-row: 2;
+    z-index: 2;
+}
+
+/* Admission */
+
+.section-admission {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 3;
+    z-index: 2;
+}
+
+.section-admission-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 3;
+    z-index: 2;
+    opacity: 60%;
+}
+
+.section-admission-right h3 {
+    visibility: hidden;
+}
+
+/* Hours */
+
+.section-hours {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 4;
+    z-index: 2;
+}
+
+/* Accessibility */
+
+.section-access {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 5;
+    z-index: 2;
+}
+
+.section-access-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 5;
+    z-index: 2;
+    opacity: 60%;
+}
+
+.section-access-right h3 {
+    visibility: hidden;
+}
+
+/* Food and drink */
+
+.section-food {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 6;
+    z-index: 2;
+}
+
+.section-food-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 6;
+    z-index: 2;
+    opacity: 60%;
+}
+
+.section-food-right h3 {
+    visibility: hidden;
+}
+
+/* Shop */
+
+.section-shop {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 7;
+    z-index: 2;
+}
+
+.section-shop-right {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 1rem;
+    grid-column: span 2;
+    grid-row: 7;
+    z-index: 2;
+    opacity: 60%;
+}
+
+.section-shop-right h3 {
+    visibility: hidden;
 }
 
 /* Footer */
@@ -558,6 +707,8 @@
     text-decoration: underline;
     margin-top: 0.3rem;
 }
+
+/* Queries */
 
 @media screen and (max-width: 1090px) {
     .container {
@@ -617,7 +768,7 @@
     }
 
     .planet-container-1 {
-        left: -10rem;
+        left: -20rem;
     }
 
     .planet-container-3 {
@@ -631,6 +782,10 @@
 
     .spaceship-container-2 {
         display: none;
+    }
+
+    .explore-article-img {
+        margin-top: 1rem;
     }
 
     .navbar {
@@ -657,10 +812,6 @@
         grid-column: span 2;
     }
 
-    .container-events {
-        grid-template-rows: repeat(8, 25rem);
-    }
-
     .section-professor-right {
         display: none;
     }
@@ -683,5 +834,15 @@
 
     .section-loan-right {
         display: none;
+    }
+
+    .right-side {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    .container-visit {
+        grid-template-rows: 25rem 10rem 25rem 25rem 12rem 10rem 14rem 25rem;
     }
 }
